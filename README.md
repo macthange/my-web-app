@@ -2,13 +2,10 @@
 
 Here is my proposed  solution for the Used case.
 
-
 ### Step to create a completed infra:
-
 
 ### Need to run this aws cli command on your local system create S3 bucket to store terraform tfstate and dynamodb to store tfstate lock.
 This is one time task
-
 
 1) Export the AWs crdentional 
 
@@ -33,11 +30,9 @@ $aws dynamodb list-tables | grep -i tflockstate-my-web-app-table || aws dynamodb
 
 $git clone https://github.com/macthange/my-web-app.git
 
-
-## cd to packer to create encripted AMI
+## cd to packer to create encrypted AMI
 
 5) Validate syntax in .hcl file 
-
 
 $./packer validate vm.pkr.hcl
 
@@ -46,7 +41,9 @@ $./packer validate vm.pkr.hcl
  
 $./packer.exe build vm.pkr.hcl
 
-7) cd to the project dir (asg_terraform or ec2_terraform )and genrate ssh key this key will be used to access ec2instance, run ansible playbook etc.
+## cd to the project dir (asg_terraform or ec2_terraform )
+
+7) genrate ssh key this key will be used to access ec2instance, run ansible playbook etc.
 
 $ssh-keygen -f mykey 
 
@@ -67,9 +64,7 @@ $./terraform apply
 
 $./terraform desrtoy 
 
-  
- ##run  aws configure update your aws credentional local system 
-
+## run  aws configure to update your aws credentional local system 
 
 12)  TO Initialize Terraform Configuration 
 
