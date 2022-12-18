@@ -3,7 +3,7 @@
 Here is my proposed  solution for the Used case.
 
 
-# Step to create a completed infra:
+## Step to create a completed infra:
 
 
 # Need to run this aws cli command on your local system create S3 bucket to store terraform tfstate and dynamodb to store tfstate lock.
