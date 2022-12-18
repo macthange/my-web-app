@@ -41,7 +41,9 @@ $./packer validate vm.pkr.hcl
  
 $./packer.exe build vm.pkr.hcl
 
-7) cd to the project dir (asg_terraform or ec2_terraform )and genrate ssh key this key will be used to access ec2instance, run ansible playbook etc.
+## cd to the project dir (asg_terraform or ec2_terraform )
+
+7) genrate ssh key this key will be used to access ec2instance, run ansible playbook etc.
 
 $ssh-keygen -f mykey 
 
@@ -62,7 +64,7 @@ $./terraform apply
 
 $./terraform desrtoy 
 
-## run  aws configure update your aws credentional local system 
+## run  aws configure to update your aws credentional local system 
 
 12)  TO Initialize Terraform Configuration 
 

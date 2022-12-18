@@ -62,7 +62,7 @@ $./terraform apply
 
 $./terraform desrtoy 
 
-##run  aws configure update your aws credentional local system 
+## run  aws configure to update your aws credentional local system 
 
 12)  TO Initialize Terraform Configuration 
 
