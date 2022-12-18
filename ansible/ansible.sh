@@ -1,0 +1,1 @@
+ansible-playbook -i aws_ec2.yaml playbook.yaml
