@@ -40,13 +40,9 @@ $git clone https://github.com/macthange/my-web-app.git
 cd to packer to create encripted AMI
 
 Validate syntax in .hcl file 
-
-
 $./packer validate vm.pkr.hcl
 
  build packer image 
- 
- 
 $./packer.exe build vm.pkr.hcl
 
 6) 
@@ -55,12 +51,10 @@ cd to the project dir (asg_terraform or ec2_terraform )and genrate ssh key this 
 $ssh-keygen -f mykey 
 
 Initialize Terraform Configuration 
-
 $./terraform init
 
 
 Create a Terraform Plan to Verify to what resorces will be create 
-
 $./terraform plan
 
 to create resources
@@ -77,19 +71,15 @@ In  Jenkins we can store creention on credentials  manger or if jenkins is runni
 we can store credentials  in gitlab registry if we use gilab runner for CI/CD pipeline
 
 Initialize Terraform Configuration 
-
 $sh tf_init.sh
 
-Create a Terraform Plan to Verify to what resorces will be create.
-
+Create a Terraform Plan to Verify to what resorces will be create 
 $sh tf_plan.sh
 
-to create resources.
-
+to create resources
 $sh tf_apply.sh
 
 
-to destory the resources.
-
+to destory the resources
 $sh tf_destroy.sh
 
